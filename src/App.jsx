@@ -1,4 +1,4 @@
-import Resume from "./PortfolioWebsiteProject/Resume"
+import Resume from "./PortfolioProject/Resume"
 const App = () => {
   return (
     <div>

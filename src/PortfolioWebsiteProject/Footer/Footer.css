@@ -1,0 +1,51 @@
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    background-color: black;
+    padding: 40px;
+    color: white;
+    align-items: center;
+    min-width: 370px;
+}
+.footer2{
+    max-width: 500px;
+}
+
+.footer3 div{
+    font-size: 20px;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    
+}
+
+p{
+  font-size: 20px;
+}
+
+
+#btn{
+    background:grey;
+    min-width: 30px;
+    border-radius: 8px;
+    box-shadow: 3px 4px 5px black ;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px 5px;
+    border: 2px solid white;
+    margin:  5px;
+}
+#btn a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen  and (max-width:1225px){
+    footer{
+        text-align: center;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+@mixin basic{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    background: red;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    min-width: 350px;
+    
+}
+@mixin imagesStyle{
+            height: 90%;
+            min-width:50%;
+            background-repeat: no-repeat;
+            background-size:contain ;
+            background-position: center;
+            
+            min-width: 330px;
+            min-height: 180px;
+
+}
+@mixin descriptionStyle{
+    background: lightblue;
+    height: 90%;
+    min-width:50%;
+    display: flex;
+    text-align: justify;
+    padding: 15px;
+    align-items: center;
+    min-width: 330px;
+    min-height: 100px
+
+}
+.aboutProject{
+    height: auto;
+    width: 100%;
+    background: lightcyan;
+    padding: 15px;
+    min-width: 350px;
+
+    h1{
+        margin-bottom: 15px;
+        font-size:40px;
+    }
+
+    .project1{
+        @include basic();
+
+        .images{
+            background: url("./Screenshot\ 2023-11-24\ 170112.png");
+            @include imagesStyle(); 
+        }
+        .description{
+           @include descriptionStyle();
+         
+
+           
+
+        }
+    }
+    .project2{
+        @include basic();
+        flex-direction: row-reverse;
+        .images{
+            background-image: url('./Screenshot\ 2023-11-24\ 170112.png');
+            @include imagesStyle();
+            
+        }
+        .description{
+            @include descriptionStyle();
+        }
+    }
+    .project3{
+        @include basic();
+
+        .images{
+            background: url("./Screenshot\ 2023-11-24\ 170112.png");
+            @include imagesStyle(); 
+        }
+        .description{
+           @include descriptionStyle();
+        }
+    }
+    .project4{
+        @include basic();
+        flex-direction: row-reverse;
+        .images{
+            background-image: url('./Screenshot\ 2023-11-24\ 170112.png');
+            @include imagesStyle();
+            
+        }
+        .description{
+            @include descriptionStyle();
+        }
+    }
+    .project5{
+        @include basic();
+
+        .images{
+            background: url("./Screenshot\ 2023-11-24\ 170112.png");
+            @include imagesStyle(); 
+        }
+        .description{
+           @include descriptionStyle();
+        }
+    }
+    .project6{
+        @include basic();
+        flex-direction: row-reverse;
+        .images{
+            background-image: url('./Screenshot\ 2023-11-24\ 170112.png');
+            @include imagesStyle();
+            
+        }
+        .description{
+            @include descriptionStyle();
+        }
+    }
+    
+}
+
+@media screen  and (max-width:900px){
+    .aboutProject {
+        .project1,.project2,.project3,.project4,.project5,.project6{
+            flex-direction: column;
+            height: auto;
+        }
+        
+    }
+}
+

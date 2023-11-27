@@ -1,0 +1,42 @@
+.about{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding:  40px;
+    background: lightcyan;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-width: 370px;
+}
+
+.about h1{
+    min-width: 150px;
+    font-size:50px;
+
+}
+section p{
+    max-width: 600px;
+}
+section #btn{
+    background:grey;
+    min-width: 30px;
+    border-radius: 8px;
+    box-shadow: 3px 4px 5px black ;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px 5px;
+}
+#btn a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width:1225px) {
+    section{
+        flex-direction: column;
+        justify-content: center;
+
+    }
+}
